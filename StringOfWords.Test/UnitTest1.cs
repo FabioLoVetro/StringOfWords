@@ -30,5 +30,17 @@ namespace StringOfWords.Test
             stringOfWords.readString("roman numeral")[0].Should().Be("numeral");
             stringOfWords.readString("roman numeral")[1].Should().Be("roman");
         }
+
+        [Test]
+        public void given_a_string_shoud_return_array_sorted_by_last_letter()
+        {
+            stringOfWords.readString("good morning to everybady enjoy your day")[0].Should().Be("good");
+            stringOfWords.readString("good morning to everybady enjoy your day")[1].Should().Be("morning");
+            stringOfWords.readString("good morning to everybady enjoy your day")[2].Should().Be("to");
+            stringOfWords.readString("good morning to everybady enjoy your day")[3].Should().Be("your");
+            stringOfWords.readString("good morning to everybady enjoy your day")[4].Should().Be("everybady");
+            stringOfWords.readString("good morning to everybady enjoy your day")[5].Should().Be("enjoy");
+            stringOfWords.readString("good morning to everybady enjoy your day")[6].Should().Be("day");
+        }
     }
 }
