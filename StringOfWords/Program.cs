@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using StringOfWords;
+
+namespace StringOfWords;
+
+public class program
+{
+
+    private static void Main(string[] args)
+    {
+        StringOfWords sow = new StringOfWords();
+        Console.WriteLine(sow.readString("good morning"));
+    }
+}
